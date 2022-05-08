@@ -36,10 +36,9 @@ p {
 img {
     display: block;
 }
-/* ~~~~~~~
+/* ~~~~~~
 container
-~~~~~~~~~~
-*/
+~~~~~~~~*/
 
 .container {
     width: 1200px;
@@ -48,6 +47,15 @@ container
     margin-left: auto;
     margin-right: auto;
     outline: 1px solid tomato;
+}
+
+/*~~~~~~~~~~~~ 
+Common section
+~~~~~~~~~~~~~~*/
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /*~~~~~~~~~~~~
@@ -86,6 +94,8 @@ header styles
     padding-left: 0px;
     display: flex;
     align-items: center;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .navigation-list {
     margin-right: 50px;
@@ -99,6 +109,9 @@ header styles
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: currentColor;
+    display: block;
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 .navigation-links:last-child {
     margin-right: 0;
@@ -109,12 +122,17 @@ header styles
     margin-left: auto;
     display: flex;
     padding-left: 0px;
+    margin-top: 0; 
+    margin-bottom: 0;
 }
 .navigation-contacts {
     text-decoration: none;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    padding-bottom: 32px;
+    padding-top: 32px;
+    display: block;
 }
 .head-contacts-list {
     margin-right: 50px;
@@ -132,12 +150,18 @@ header styles
     color: var(--main-hover-color);
 }
 
-/* heroic styles */
+/* ~~~~~~~~~~
+heroic styles 
+~~~~~~~~~~~~~
+*/
 
 .heroic {
     background-color: var(--heroic-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .heroic-header {
+    margin-bottom: 40px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;    
@@ -145,8 +169,17 @@ header styles
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-button-text-color)
+    
 }
 .heroic-button {
+
+
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+    min-height: 50px;
+    max-width: 240px;
+    
     background-color: var(--main-hover-color);
     color: var(--main-button-text-color);
     font-weight: 700;
@@ -158,6 +191,8 @@ header styles
     letter-spacing: 0.06em;
     cursor: pointer;
     font-family: inherit;
+    padding: 10px 32px;
+
 }
 .heroic-button:hover,
 .heroic-button:focus
@@ -199,6 +234,11 @@ header styles
 .activities-list {
     list-style-type: none;
 }
+
+/*~~~~~~~~~~
+ Team styles
+~~~~~~~~~~*/
+
 .team {
     background-color: var(--third-background-color);
 }
@@ -233,8 +273,15 @@ header styles
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+
+/*~~~~~~~~~~~ 
+Footer styles 
+~~~~~~~~~~~~*/
+
 .bottom {
-    background-color: #2F303A;;
+    background-color: #2F303A;
+    padding-top: 60px; 
+    padding-bottom: 60px;
 }
 .site-logo-part-2 {
     color: var(--main-button-text-color)

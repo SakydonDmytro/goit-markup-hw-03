@@ -9,7 +9,12 @@
     --main-hover-color: #2196F3;
     --heroic-button-hover:#188CE8;
     --bottom-links-color: rgba(255, 255, 255, 0.6);
+    --head-border-line-color: #ECECEC;
 }
+
+/*~~~~~~~~~~~~~~~~~~
+ common body styles 
+ ~~~~~~~~~~~~~~~~~~*/
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -18,10 +23,50 @@ body {
     font-size: 14px;
 }
 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+    margin: 0px;
+}
+
+img {
+    display: block;
+}
+/* ~~~~~~~
+container
+~~~~~~~~~~
+*/
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid tomato;
+}
+
+/*~~~~~~~~~~~~
+header styles 
+~~~~~~~~~~~~~*/
+
 .head {
     background-color: var(--main-background-color);
     list-style-type: none;
-    
+    border-bottom: 1px solid var(--head-border-line-color);
+    align-items: center;
+}
+.head-container {
+    display: flex;
+    align-items: center;
+}
+.head-base-nav {
+    display: flex;
+    align-items: center;
 }
 .site-logo {  
     font-weight: 700;
@@ -30,15 +75,24 @@ body {
     line-height: 1.19;
     text-decoration: none;
     color: var(--main-hover-color);
+    tab-size: 0px;
+    margin-right: 93px;
 }
 .site-logo-part {
-
     color: var(--main-text-color);
 }
 .navigation {
     list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
 }
-
+.navigation-list {
+    margin-right: 50px;
+}
+.navigation-list:last-child {
+    margin-right: 0;
+}
 .navigation-links {
     text-decoration: none;
     font-weight: 500;
@@ -46,10 +100,27 @@ body {
     letter-spacing: 0.02em;
     color: currentColor;
 }
-.contacts {
+.navigation-links:last-child {
+    margin-right: 0;
+}
+
+.head-contacts {
+    list-style-type: none;
+    margin-left: auto;
+    display: flex;
+    padding-left: 0px;
+}
+.navigation-contacts {
+    text-decoration: none;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+}
+.head-contacts-list {
+    margin-right: 50px;
+}
+.head-contacts-list:last-child {
+    margin-right: 0;
 }
 .current {
     color: var(--heroic-button-hover);
@@ -60,6 +131,9 @@ body {
  {
     color: var(--main-hover-color);
 }
+
+/* heroic styles */
+
 .heroic {
     background-color: var(--heroic-background-color);
 }
@@ -100,6 +174,7 @@ body {
     list-style-type: none;
 }
 .feauters-chapters {
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;

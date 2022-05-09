@@ -220,9 +220,6 @@ feauter styles
 .feauters-list {
     list-style-type: none;
     display: flex;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
     justify-content: space-between;
 }
 .features-list-block {
@@ -257,10 +254,8 @@ feauter styles
 }
 .activities-list {
     list-style-type: none;
-    padding-left: 0;
     display: flex;
     justify-content: space-between;
-    margin: 0;
 }
 
 /*~~~~~~~~~~
@@ -299,8 +294,8 @@ feauter styles
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .team-member-position {
     font-size: 16px;
@@ -308,7 +303,7 @@ feauter styles
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 /*~~~~~~~~~~~ 
@@ -428,6 +423,9 @@ portfolio part
     background: var(--main-background-color);
     box-sizing: border-box;
     border: 1px solid #EEEEEE;
+}
+.portfolio-image {
+    border: none; 
 }
 .portfolio-item-head {
     padding-top: 20px;
